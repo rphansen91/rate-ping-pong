@@ -1,6 +1,6 @@
 {
   "name": "rate-ping-pong",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rate limit methods and adjust behavior according to current usage rates",
   "main": "index.js",
   "scripts": {

@@ -5,7 +5,7 @@ Maintain zippy user experience while constantly adjusting to various API usage r
 
 - Install
 
-`npm install rate-ping`
+`npm install rate-ping-pong`
 
 - Setup
 
