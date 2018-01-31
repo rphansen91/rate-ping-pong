@@ -26,12 +26,14 @@ const limiter = new RatePingPong(function highUsage () {
 1. run(args) -> Promise
 
 
-  Call the `highUsage` method with supplied arguments
-  Returns a Promise
+  Call the `highUsage` method with supplied arguments, only allow 1 function execution per timer interval
+  Returns a Promise which resolves after function execution
 
 
 ```js
-limiter.run('a', 'b') // Promise
+limiter.run('a') // Called in 100ms returns Promise.resolve('a')
+limiter.run('b') // Called in 200ms returns Promise.resolve('b')
+limiter.run('c') // Called in 300ms returns Promise.resolve('c')
 ```
 
 2. setTimer(Number) -> undefined

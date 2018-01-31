@@ -7,8 +7,12 @@
     "test": "jest ./ --watchAll",
     "start": "nodemon example.js"
   },
-  "keywords": [],
+  "keywords": ["rate", "limiting", "asynchronous", "scale", "scalability"],
   "author": "Ryan P. Hansen",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/rphansen91/rate-ping-pong.git"
+  },
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
